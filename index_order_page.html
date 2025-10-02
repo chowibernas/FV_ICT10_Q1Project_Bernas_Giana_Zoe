@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://pyscript.net/releases/2024.1.1/core.css">
+    <script type="module" src="https://pyscript.net/releases/2024.1.1/core.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet">
+    <title>ICT 10 PROJECT</title>
+
+</head>
+
+<style>
+
+    body {
+        font-family: 'Parkinsans', sans-serif;
+		font-weight: 500;
+        margin-bottom: 50px;
+    }
+
+	header nav {
+		padding: 1.5em 0 1.5 5em;
+        background-color: white;
+        opacity: 0.90;
+        border: 10px black;
+        box-shadow: 0px 0px 0px rgba(0,0,0,0.5)     
+	}
+
+	.navbar {
+		height: 75px;
+	}
+
+    .nav-link {
+        color: #344F1F;
+        font-size: 17px;
+    }
+
+    .nav-link:hover {
+        color: #F4991A
+    }
+
+    .restaurant_title {
+        margin: auto;
+        margin-top: 10px;
+        text-align: center;
+        background-color: #344F1F;
+        border-radius: 50px;
+        padding: 30px;
+        width: 650px;
+        color: white;
+    }
+
+    img {
+        height: 250px;
+        width: 200px;
+        border-radius: 30px;
+    }
+
+    .pizza_row, .bs_row, .dessert_row {
+        display: flex;
+        justify-content: center;
+        gap: 20px;
+        margin-left: 100px;
+    }
+
+    p {
+        font-size: 20px;
+    }
+
+    input[type="checkbox"] {
+        width: 40px;
+        height: 40px;
+    }
+
+    .col-md-3 {
+        margin-left: 950px; 
+        margin-top: -1375px; 
+        background-color: #F5F5F0; 
+        border: 10px black; 
+        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.7);
+        width: 400px;
+        height: 700px;
+        border-radius: 30px;
+        padding: 50px;
+        text-align: center;
+    }
+   
+    input[type="text"], input[type="number"] {
+        border-radius: 10px;
+    }
+
+    .col-md-3 button {
+        border-radius: 30px;
+        width: 150px;
+        height: 50px;
+        background-color: #344F1F;
+        color: white;
+    }
+
+    .col-md-3 button:hover {
+        color: #F4991A;
+    }
+    
+    
+</style>
+
+<header>
+
+<!-- NAVBAR DESIGN AREA -->
+<div class="navbar">
+	<nav class="navbar navbar-expand-md fixed-top"; style="background-color: background-color: rgba(2, 14, 62, 0);">
+		<div class="container-fluid">
+			<img src="https://i.pinimg.com/736x/5b/3e/b6/5b3eb6fc2ba4755a0f3de7e36949bfd5.jpg" style="width:75px; height: 50px">
+
+				<div class="col" >
+					<ul class="navbar-nav me-auto">
+										<li class="nav-item">
+											<button class="btn btn-default"><a class="nav-link" href="index.html">Home</a></button>
+										</li>
+										<li class="nav-item">
+											<button class="btn btn-default"><a class="nav-link" href="index_order_page.html">Order Now</a></button>
+										</li>
+										<li class="nav-item">
+											<button class="btn btn-default"><a class="nav-link" href="index_contact_us.html"> Contact Us</a></button>
+										</li>
+										</ul>
+									</div>
+
+									<form class="d-flex">
+									<input class="form-control" type="text" placeholder="search...">
+									<button class="btn"; style="background-color: ; color: #344F1F" type="button">Search</button>
+								</form>
+							</div>
+						</nav>
+					</div>
+				</header>
+
+<body>
+
+    <!-- This section contains the file for the fonts -->
+    <div class="fonts">
+			<link rel="preconnect" href="https://fonts.googleapis.com">
+			<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+			<link href="https://fonts.googleapis.com/css2?family=Barriecito&family=Host+Grotesk:ital,wght@0,300..800;1,300..800&family=Parkinsans:wght@300..800&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+
+			<link rel="preconnect" href="https://fonts.googleapis.com">
+			<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+			<link href="https://fonts.googleapis.com/css2?family=Barriecito&family=Caveat&family=Host+Grotesk:ital,wght@0,300..800;1,300..800&family=Parkinsans:wght@300..800&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+	</div>
+
+    
+    <div class="restaurant_title">
+        <h1> STORE NAME'S ORDERING PAGE </h1>
+         
+    </div>
+
+    <br><br><br>
+
+    <div class="container mt-5">
+        <div class="row">
+
+            <div class="col-md-6">
+                <div class="best_sellers_sec">
+                    <div class="container mt-7">
+                        <div class="row text-center">
+
+                            <!-- THIS AREA IS FOR BEST SELLING PRODUCTS SECTION -->
+                            
+                            <div class="bs_row">
+                                <div class="bs-yum">
+                                <img src="https://i.pinimg.com/736x/e6/bc/ad/e6bcad97ef0aeaa6129c05027af5f2d3.jpg">
+                                <br><br>
+                                <p>Scarpiello Pasta</p>
+                                <br>
+                                <input type="checkbox" id="input1" value=675>
+                                </div>
+                            <div class="bs-yum">
+                                <img src="https://i.pinimg.com/1200x/76/3c/18/763c18a43c1ddd2c860b759536a947a9.jpg">
+                                <br><br>
+                                <p>Italian Wedding Soup</p>
+                                <br>
+                                <input type="checkbox" id="input2" value=350>
+                                </div>
+                                <div class="bs-yum">
+                                <img src="https://i.pinimg.com/1200x/68/5e/19/685e199d02ab510b976d9b7913d24deb.jpg">
+                                <br><br>
+                                <p>Chicken alla Cacciatora</p>
+                                <br>
+                                <input type="checkbox" id="input3" value=399.99>
+                                </div>
+                                <div class="bs-yum">
+                                <img src="https://i.pinimg.com/1200x/ee/b6/f2/eeb6f2e11e48f4202573960c809cbf2a.jpg">
+                                <br><br>
+                                <p>Pasta Fagioli Soup</p>
+                                <br>
+                                <input type="checkbox" id="input4" value=425>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+                <br><br>
+
+                <!-- THIS AREA IS FOR PIZZA SECTION -->
+
+                <div class="big_pizza_sec">
+                    <div class="container mt-7">
+                        <div class="row text-center">
+                            
+                            <div class="pizza_row">
+                                <div class="pizza-yum">
+                                <img src="https://i.pinimg.com/736x/20/06/f3/2006f316df84ff67b73b027837f94d50.jpg">
+                                <br><br>
+                                <p>Pizza alla Bufala</p>
+                                <br>
+                                <input type="checkbox" id="input5" value=600>
+                                </div>
+                            <div class="pizza-yum">
+                                <img src="https://i.pinimg.com/1200x/2a/d1/ef/2ad1efe9c1ebfeadf939d8db1464fd3b.jpg">
+                                <br><br>
+                                <p>Pizza con Patate</p>
+                                <br>
+                                <input type="checkbox" id="input6" value=575>
+                                </div>
+                                <div class="pizza-yum">
+                                <img src="https://i.pinimg.com/1200x/9e/35/56/9e3556a3271cb82e830894635e475c54.jpg">
+                                <br><br>
+                                <p>Prosciutto e Rucola</p>
+                                <br>
+                                <input type="checkbox" id="input7" value=650>
+                                </div>
+                                <div class="pizza-yum">
+                                <img src="https://i.pinimg.com/1200x/22/70/b8/2270b844b71be7d292e9ac6a3ff3aa4a.jpg">
+                                <br><br>
+                                <p>Quattro Formaggi</p>
+                                <br>
+                                <input type="checkbox" id="input8" value=590>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+                <br><br>
+
+                <!-- THIS AREA IS FOR DESSERT SECTION-->
+
+                <div class="big_desserts_sec">
+                    <div class="container mt-7">
+                        <div class="row text-center">
+                            
+                            <div class="dessert_row">
+                                <div class="dessert-yum">
+                                <img src="https://i.pinimg.com/736x/97/39/d3/9739d3d5f8818747e1721c2e1fd4b24c.jpg">
+                                <br><br>
+                                <p>Tiramisu</p>
+                                <br>
+                                <input type="checkbox" id="input9" value=375>
+                                </div>
+                            <div class="dessert-yum">
+                                <img src="https://i.pinimg.com/736x/bd/b3/9b/bdb39b609a9fde8f4eb157e9c4d8f488.jpg">
+                                <br><br>
+                                <p>Pistachio Stracciatella Gelato</p>
+                                <br>
+                                <input type="checkbox" id="input10" value=675>
+                                </div>
+                                <div class="dessert-yum">
+                                <img src="https://i.pinimg.com/1200x/54/58/69/545869d50b980ed7e3e056346baedf35.jpg">
+                                <br><br>
+                                <p>Affogato</p>
+                                <br>
+                                <input type="checkbox" id="input11" value=675>
+                                </div>
+                                <div class="pizza-yum">
+                                <img src="https://i.pinimg.com/1200x/79/7c/fb/797cfb0c51631984731c0371e2233570.jpg">
+                                <br><br>
+                                <p>Vanilla Panna Cotta</p>
+                                <br>
+                                <input type="checkbox" id="input12" value=295>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+             <div class="col-md-3">
+                <div class="customer_details">
+                    <h2 style="color: #344F1F">Customer Details</h2>
+
+                    <br>
+
+                    <input type="text" id="customer_name" placeholder="Enter your name">
+                    <br><br>
+                    <input type="text" id="customer_address" placeholder="Enter your address">
+                    <br><br>
+                    <input type="number" id="customer_number" placeholder="Enter your number name">
+
+                    <br><br><br>
+                    <button type="button" py-click="get_info">Submit</button>
+
+                    <div id="pfinfo"></div>
+
+                    <!-- Below is for the line break-->
+                    <div id="_info" style="white-space: pre;"></div>
+                    <h3 id="total_price" style="color: #F4991A"></h3>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script type="py" src="main.py"></script>
+    
+
+</body>
+</html>
